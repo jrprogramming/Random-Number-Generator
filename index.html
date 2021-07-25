@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Number Guesser</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <main>
+            <h1 id="title-heading">Random Number Guesser</h1>
+            <section>
+                <h1>How many players?</h1>
+                <div class="buttons-div">
+                    <button id="one-player-button" class="player-button game-button button-selected">One</button>
+                    <button id="two-players-button" class="player-button game-button">Two</button>
+                </div>
+            </section>
+            <section>
+                <h1>Player names</h1>
+                <p id="error-message"></p>
+                <div id="textfield-div">
+                    <input class="textfield" id="player-1-name" type="text" minlength="4" maxlength="30" placeholder="Player 1 Name" autofocus/>
+                </div>
+            </section>
+            <section>
+                <h1>Difficulty</h1>
+                <div class="buttons-div">
+                    <button id="easy-button" class="difficulty-button game-button button-selected">Easy 1024</button>
+                    <button id="medium-button" class="difficulty-button game-button">Medium 2048</button>
+                    <button id="hard-button" class="difficulty-button game-button">Hard 4096</button>
+                </div>
+            </section>
+            <button id="start-button" class="game-button submit-button">Start</button>
+            <div id="dark-background">
+                <div id="pop-up">
+                    <h1 id="pop-up-header"></h1> 
+                    <p id="pop-up-text"></p>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

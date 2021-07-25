@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Number Guesser</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <link href="game.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <main>
+            <h1 id="title-heading">Random Number Guesser</h1>
+            <h1 id="range"></h1>
+            <div id="game-screen">
+                <div id="main-game-screen">
+                    <div class="section">
+                        <div id="guess-div" class="title-div">
+                            <h1>Guesses: </h1>
+                            <h1 id="guesses">0</h1>
+                        </div>
+                        <div id="action-div">
+                            <div id="enter-a-number-div">
+                                <h1 id="enter-a-number">Enter a number</h1>
+                            </div>
+                            <div id="error-message-div">
+                                <p id="error-message"></p>
+                            </div>
+                            <div id="inputs-div">
+                                <input class="textfield" id="enter-number-textfield" type="text" minlength="4" maxlength="30" placeholder="" autofocus/>
+                                <button id="help-button" class="game-button submit-button">Help</button>
+                                <button id="submit-button" class="game-button submit-button">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="scoreboard" class="section">
+                        <div class="title-div">
+                            <h1>Leaderboard</h1>
+                        </div>
+                        <div id="ranking-div">
+                        </div>
+                    </div>
+                </div>
+                <div id="extra-buttons-div">
+                    <button id="restart-button" class="game-button submit-button">Restart</button>
+                    <a href="./index.html" id="quit-button" class="game-button submit-button">Quit</a>
+                </div>
+            </div>
+            <div id="dark-background">
+                <div id="pop-up">
+                    <h1 id="pop-up-header"></h1> 
+                    <div id="pop-up-body"></div>
+                </div>
+            </div>
+        </main>
+        <script src="game.js"></script>
+    </body>
+</html>

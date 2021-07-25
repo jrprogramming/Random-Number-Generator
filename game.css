@@ -1,0 +1,212 @@
+html, body {
+    min-height: 800px;
+}
+#quit {
+    color: white;
+    font-size: 36px;
+    background-color: #ff0000e0;
+    width: 280px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.title-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin: 10px 0;
+}
+.textfield {
+    text-align: center;
+}
+#action-div {
+    box-sizing: border-box;
+    border-top: solid #d3d3d3 1px;
+    padding: 10px;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main {
+    flex-direction: column;
+}
+#extra-buttons-div  {
+    margin: 0 15px;
+    box-sizing: border-box;
+}
+#help-button {
+    width: 100%;
+    background-color: #1774ff !important;
+}
+#game-screen {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+#main-game-screen {
+    display: flex;
+    flex-direction: row;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #393c44;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    height: 425px;
+}
+#ranking-div {
+    border-top: solid #d3d3d3 1px;
+    max-height: 350px;
+    overflow-y: scroll;
+}
+#header {
+    position: absolute;
+    top: 0;
+}
+.leader {
+    border-radius: 10px;
+    width: 512px;
+    background-color: #7c8aaf;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.scoreboard-player {
+    font-size: 36px;
+    text-align: left;
+}
+#submit-button, #help-button {
+    margin: 10px 0;
+    background-color: #008f0c;
+    max-height: 50px;
+    width: 620px;
+}
+#quit-button {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    background-color: #ff0000;
+}
+#error-message-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+#error-message {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    color: #ff0000;
+    font-size: 24px;
+    text-align: center;
+}
+.help-message {
+    color: #ffffff !important;
+}
+#inputs-div {
+    box-sizing: border-box;
+    width: 620px;
+}
+#restart-button {
+    background-color: #1774ff;
+    margin: 10px 0;
+    width: 100%;
+}
+#not-looking {
+    height: auto;
+    background-color: #ff0000;
+}
+#submit-magic-num {
+    margin: 10px 0;
+    width: 100%;
+    background-color: #008f0c;
+}
+#pop-up-error-message {
+    color: #ff0000
+}
+@media screen and (max-width: 1248px) {
+    body {
+        min-height: 1244px;
+        min-width: auto;
+    }
+    #main-game-screen {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 700px) {
+    body {
+        min-height: 1200px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    .section {
+        width: 360px;
+        height: auto;
+    }
+    #pop-up-header {
+        font-size: 24px;
+    }
+    #error-message {
+        font-size: 18px;
+    }
+    #pop-up {
+        padding: 12px;
+    }
+    #action-div {
+        width: 350px;
+    }
+    #error-message {
+        font-size: 18px;
+    }
+    #submit-button, #help-button, .leader, #enter-number-textfield {
+        width: 320px
+    }
+    #inputs-div {
+        margin: 0;
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    body {
+        min-height: 1040px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .game-button {
+        font-size: 24px;
+    }
+    .section {
+        width: 300px;
+    }
+    #pop-up {
+        padding: 12px;
+    }
+    #action-div {
+        width: 290px;
+    }
+    #error-message {
+        font-size: 16px;
+    }
+    #submit-button, #help-button, .leader, #enter-number-textfield {
+        width: 260px
+    }
+    #inputs-div {
+        margin: 0;
+        width: 270px;
+    }
+    #pop-up-header {
+        font-size: 36px;
+    }
+}
